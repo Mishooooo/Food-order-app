@@ -1,8 +1,8 @@
-form {
+.form {
     text-align: right;
      font-size: 1.2em;
 }
-form input {
+.form input {
     margin: 7px;
     border-radius: 5px;
     width: 2.7rem;

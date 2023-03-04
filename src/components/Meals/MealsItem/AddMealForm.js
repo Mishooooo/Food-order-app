@@ -28,7 +28,7 @@ const AddMealsForm = function (props) {
 
   return (
     <>
-      <form onSubmit={AddInCart}>
+      <form onSubmit={AddInCart} className={styles.form}>
         <label htmlFor="amount"> Amount </label>
         <input
           type="number"

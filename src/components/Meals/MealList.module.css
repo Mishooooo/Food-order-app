@@ -1,26 +1,45 @@
 .meals {
+ 
+     
     max-width: 60rem;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
-    
+    text-align: center;
     animation: meals-appear 1s ease-out forwards;
 
 }
 
 .meals ul {
+    text-align: left;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+section svg {
+    margin: auto;
+    width: 6rem;
+    height: 6rem;
+    animation: rotate 2s infinite linear;
+    color: aliceblue;
 
-@keyframes meals-appear {
+}
+.MealsError {
+    font-size: 4em;
+    text-align: center;
+    color: red;
+}
+@keyframes rotate {
     from {
-        opacity: 0;
-        transform: translateY(3rem);
+        transform: rotate(0deg);
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
+
+        transform: rotate(360deg);
     }
+
+
 }
+
+
+
