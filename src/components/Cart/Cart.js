@@ -68,7 +68,7 @@ const Cart = (props) => {
 
   if (didSubmit) {
     return (
-      <Modal>
+      <Modal onClose={props.onClose}>
         <h3>{didSubmit}</h3>
         <div className={classes.actions}>
           <button className={classes.button} onClick={props.onClose}>
@@ -81,7 +81,7 @@ const Cart = (props) => {
   if (showOrderForm) {
     if (isSendingReq) {
       return (
-        <Modal>
+        <Modal onClose={props.onClose}>
           <div className={classes["data-sending"]}>
             <p>Sending data</p>
             <SpinnerIcon />
@@ -90,7 +90,7 @@ const Cart = (props) => {
       );
     }
     return (
-      <Modal>
+      <Modal onClose={props.onClose}>
         <div className={classes.total}>
           <span>Total Amount</span>
           <span>${cartCtx.totalAmount.toFixed(2)}</span>
@@ -101,7 +101,7 @@ const Cart = (props) => {
   }
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
